@@ -5,6 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.testng.asserts.SoftAssert;
 
+import java.nio.file.Paths;
 import java.util.List;
 
 public class app1 {
@@ -266,4 +267,22 @@ public class app1 {
             browser.close();
             playwright.close();
         }
+
+        @Test
+    @DisplayName("Alert")
+    public void Alert(){
+            Playwright playwright = Playwright.create();
+            Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+            BrowserContext newContext = browser.newContext(
+                    new Browser.NewContextOptions().setRecordVideoDir(Paths.get("Videos/")).setRecordVideoSize(1280, 720));
+            Page page = newContext.newPage();
+            page.navigate("http://autopract.com/selenium/alert5/");
+            page.onDialog(dialog -> {
+                dialog.accept();
+            });
+            page.locator("#alert-button").click();
+            newContext.close();
+            playwright.close();
+        }
+
 }
