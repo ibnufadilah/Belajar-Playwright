@@ -232,8 +232,38 @@ public class app1 {
         playwright.close();
     }
 
+    @Test
+    @DisplayName("Handle Frame in Playwright Java")
+    public void Handle_Frame_in_Playwright_Java(){
+        Playwright playwright = Playwright.create();
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Page page = browser.newPage();
+        page.navigate("http://www.maths.surrey.ac.uk/explore/nigelspages/frame2.htm");
 
+        FrameLocator middleFrame = page.frameLocator("//frame[@src='message.htm']");
 
+        middleFrame.locator("//input[@name='name']").type("Naruto Uzumaki");
+        middleFrame.locator("//textarea[@name='suggestions']").type("I Am Inside The Frame");
 
+        page.close();
+        browser.close();
+        playwright.close();
+        }
 
+        @Test
+    @DisplayName("Handle Nested Frames in Playwright Java")
+    public void HandleNestedFramesinPlaywrightJava(){
+            Playwright playwright = Playwright.create();
+            Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+            Page page = browser.newPage();
+            page.navigate("https://the-internet.herokuapp.com/nested_frames");
+            FrameLocator parentFrame = page.frameLocator("//frame[@name='frame-top']");
+            FrameLocator middleFrame = parentFrame.frameLocator("//frame[@name='frame-middle']");
+            String textContent = middleFrame.locator("body").textContent();
+            System.out.println(textContent);
+
+            page.close();
+            browser.close();
+            playwright.close();
+        }
 }

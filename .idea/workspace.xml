@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a4084b9-0b93-42b9-a148-a088f35057c8" name="Changes" comment="dropdown">
+    <list default="true" id="1a4084b9-0b93-42b9-a148-a088f35057c8" name="Changes" comment="auto complete and checkbox and radio button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/id/co/pkp/app1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/id/co/pkp/app1.java" afterDir="false" />
     </list>
@@ -38,6 +38,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.app1.autco_complete_test.executor": "Debug",
+    "JUnit.app1.checkbox.executor": "Debug",
     "JUnit.app1.dynamindropdown.executor": "Debug",
     "JUnit.app1.getfirstandlastelement.executor": "Debug",
     "JUnit.app1.getlistelement.executor": "Debug",
@@ -55,7 +56,23 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.app1.checkbox">
+  <component name="RunManager" selected="JUnit.app1.HandleNestedFramesinPlaywrightJava">
+    <configuration name="app1.HandleNestedFramesinPlaywrightJava" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="id.co.pkp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="id.co.pkp" />
+      <option name="MAIN_CLASS_NAME" value="id.co.pkp.app1" />
+      <option name="METHOD_NAME" value="HandleNestedFramesinPlaywrightJava" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="app1.autco_complete_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
@@ -104,22 +121,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app1.getfirstandlastelement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="id.co.pkp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="id.co.pkp" />
-      <option name="MAIN_CLASS_NAME" value="id.co.pkp.app1" />
-      <option name="METHOD_NAME" value="getfirstandlastelement" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="app1.getlistelement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
@@ -138,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.app1.HandleNestedFramesinPlaywrightJava" />
         <item itemvalue="JUnit.app1.checkbox" />
         <item itemvalue="JUnit.app1.autco_complete_test" />
         <item itemvalue="JUnit.app1.dynamindropdown" />
         <item itemvalue="JUnit.app1.getlistelement" />
-        <item itemvalue="JUnit.app1.getfirstandlastelement" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +157,7 @@
       <updated>1701399950935</updated>
       <workItem from="1701399951928" duration="1863000" />
       <workItem from="1701658862835" duration="20000" />
-      <workItem from="1701658940491" duration="3690000" />
+      <workItem from="1701658940491" duration="4548000" />
     </task>
     <task id="LOCAL-00001" summary="soft assert">
       <option name="closed" value="true" />
@@ -190,7 +191,31 @@
       <option name="project" value="LOCAL" />
       <updated>1701661400870</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="auto complete and checkbox">
+      <option name="closed" value="true" />
+      <created>1701662766796</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701662766796</updated>
+    </task>
+    <task id="LOCAL-00006" summary="auto complete and checkbox and radio button">
+      <option name="closed" value="true" />
+      <created>1701662990109</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701662990109</updated>
+    </task>
+    <task id="LOCAL-00007" summary="auto complete and checkbox and radio button">
+      <option name="closed" value="true" />
+      <created>1701663007004</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701663007005</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +237,8 @@
     <MESSAGE value="soft assert" />
     <MESSAGE value="first element" />
     <MESSAGE value="dropdown" />
-    <option name="LAST_COMMIT_MESSAGE" value="dropdown" />
+    <MESSAGE value="auto complete and checkbox" />
+    <MESSAGE value="auto complete and checkbox and radio button" />
+    <option name="LAST_COMMIT_MESSAGE" value="auto complete and checkbox and radio button" />
   </component>
 </project>
