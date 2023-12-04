@@ -222,10 +222,17 @@ public class app1 {
         page.navigate("http://autopract.com/selenium/form5//");
         page.locator("//input[@value='four']").uncheck();
 
+
+        page.navigate("http://autopract.com/selenium/form5/");
+        page.locator("input[value='CA']").click();
+        page.locator("input[value='mac']").check();
+
         page.close();
         browser.close();
         playwright.close();
     }
+
+
 
 
 
