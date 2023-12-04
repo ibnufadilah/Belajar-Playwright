@@ -315,6 +315,8 @@ public class app1 {
 
             String textContent = page.locator("//p[normalize-space()='This is Sample Popup.']").textContent();
             System.out.println(textContent);
+
+
             page.close();
             browser.close();
             playwright.close();
