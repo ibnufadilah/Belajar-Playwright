@@ -150,4 +150,83 @@ public class app1 {
         playwright.close();
     }
 
+    @Test
+    @DisplayName("Dynamic Dropdown")
+    public void dynamindropdown(){
+        Playwright playwright = Playwright.create();
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Page page = browser.newPage();
+        page.navigate("http://autopract.com/selenium/dropdown4/");
+        page.locator("//span[@class='caret']").click();
+        Locator countries = page.locator("//div[@role='combobox']");
+
+        List<String> allInnerTexts = countries.allInnerTexts();
+//        allInnerTexts.forEach(System.out::println);
+        for (String innerTexts : allInnerTexts) {
+            if (innerTexts.contains("Aruba")) {
+                countries.click();
+            }
+        }
+        page.close();
+        browser.close();
+        playwright.close();
+    }
+
+    @Test
+    @DisplayName("Auto complete test")
+    public void autco_complete_test(){
+        Playwright playwright = Playwright.create();
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Page page = browser.newPage();
+        String expectedText = "Guatemala";
+
+        page.navigate("https://demo.automationtesting.in/AutoComplete.html");
+        Locator autoC = page
+                .locator("//div[@class='ui-autocomplete-multiselect ui-state-default ui-widget ui-state-active']");
+        int autoCcount = autoC.count();
+        System.out.println("autoCcount: " + autoCcount);
+
+        page.pause();
+
+        for (int i = 0; i < autoCcount; i++) {
+
+            String autoCText = autoC.nth(i).textContent();
+            System.out.println("yang dicari" + autoCText);
+            if (autoCText == expectedText) {
+
+                autoC.nth(i).click();
+                break;
+
+            }
+        }
+        page.close();
+        browser.close();
+        playwright.close();
+    }
+
+    @Test
+    @DisplayName("Checlbox")
+    public void checkbox(){
+        Playwright playwright = Playwright.create();
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Page page = browser.newPage();
+        // using click
+        page.navigate("http://autopract.com/selenium/form5//");
+        page.locator("//input[@value='four']").click();
+
+        //using check
+        page.navigate("http://autopract.com/selenium/form5//");
+        page.locator("//input[@value='four']").check();
+
+        // using uncheck
+        page.navigate("http://autopract.com/selenium/form5//");
+        page.locator("//input[@value='four']").uncheck();
+
+        page.close();
+        browser.close();
+        playwright.close();
+    }
+
+
+
 }
