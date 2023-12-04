@@ -281,6 +281,13 @@ public class app1 {
                 dialog.accept();
             });
             page.locator("#alert-button").click();
+
+            page.onDialog(dialog -> {
+                dialog.dismiss();
+            });
+            page.locator("#confirm-button").click();
+
+
             newContext.close();
             playwright.close();
         }

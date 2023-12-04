@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a4084b9-0b93-42b9-a148-a088f35057c8" name="Changes" comment="Handle Nested Frames in Playwright Java">
+    <list default="true" id="1a4084b9-0b93-42b9-a148-a088f35057c8" name="Changes" comment="alert">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/id/co/pkp/app1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/id/co/pkp/app1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +37,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.app1.Alert.executor": "Debug",
     "JUnit.app1.HandleNestedFramesinPlaywrightJava.executor": "Debug",
     "JUnit.app1.autco_complete_test.executor": "Debug",
     "JUnit.app1.checkbox.executor": "Debug",
@@ -157,7 +159,7 @@
       <updated>1701399950935</updated>
       <workItem from="1701399951928" duration="1863000" />
       <workItem from="1701658862835" duration="20000" />
-      <workItem from="1701658940491" duration="4862000" />
+      <workItem from="1701658940491" duration="5589000" />
     </task>
     <task id="LOCAL-00001" summary="soft assert">
       <option name="closed" value="true" />
@@ -223,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701663586918</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="alert">
+      <option name="closed" value="true" />
+      <created>1701663961918</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701663961918</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +258,7 @@
     <MESSAGE value="auto complete and checkbox" />
     <MESSAGE value="auto complete and checkbox and radio button" />
     <MESSAGE value="Handle Nested Frames in Playwright Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Handle Nested Frames in Playwright Java" />
+    <MESSAGE value="alert" />
+    <option name="LAST_COMMIT_MESSAGE" value="alert" />
   </component>
 </project>
