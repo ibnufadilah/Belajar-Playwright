@@ -5,6 +5,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.testng.asserts.SoftAssert;
 
+import java.util.List;
+
 public class app1 {
         @Test
         @DisplayName("Test Web PKP")
@@ -118,5 +120,34 @@ public class app1 {
             browser.close();
             playwright.close();
         }
+    @Test
+    @DisplayName("get list element")
+    public void getlistelement(){
+        Playwright playwright = Playwright.create();
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Page page = browser.newPage();
+        page.navigate("https://www.programsbuzz.com/search/node?keys=playwright+java");
+        Locator listEle = page.locator("//h3[@class='search-result__title']");
+        List<String> allTextContents = listEle.allTextContents();
+        System.out.println(allTextContents);
+        page.close();
+        browser.close();
+        playwright.close();
+
+    }
+
+    @Test
+    @DisplayName("Dropdown")
+    public void dropdown(){
+        Playwright playwright = Playwright.create();
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Page page = browser.newPage();
+        page.navigate("http://autopract.com/selenium/dropdown1/");
+        page.selectOption(".custom-select", "item2");
+
+        page.close();
+        browser.close();
+        playwright.close();
+    }
 
 }
