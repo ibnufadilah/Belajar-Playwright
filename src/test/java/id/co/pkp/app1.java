@@ -322,4 +322,22 @@ public class app1 {
             playwright.close();
         }
 
+        @Test
+    @DisplayName("Record video")
+    public void recordvideo(){
+            Playwright playwright = Playwright.create();
+            Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+            BrowserContext newContext = browser.newContext(
+                    new Browser.NewContextOptions().setRecordVideoDir(Paths.get("Videos/")).setRecordVideoSize(1280, 720));
+            Page page = newContext.newPage();
+
+            page.navigate("https://www.programsbuzz.com/user/login");
+
+            page.locator("#edit-name").type("Nauto");
+            page.locator("#edit-pass").type("Madara");
+
+            newContext.close();
+            playwright.close();
+        }
+
 }

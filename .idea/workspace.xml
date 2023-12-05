@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a4084b9-0b93-42b9-a148-a088f35057c8" name="Changes" comment="retry skenario">
+      <change afterPath="$PROJECT_DIR$/src/test/java/id/co/pkp/Retry/popUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/id/co/pkp/Retry/dicoba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/id/co/pkp/Retry/dicoba.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/id/co/pkp/app1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/id/co/pkp/app1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,31 +41,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.app1.Alert.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.app1.HandleNestedFramesinPlaywrightJava.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.app1.autco_complete_test.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.app1.checkbox.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.app1.dynamindropdown.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.app1.getfirstandlastelement.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.app1.getlistelement.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.app1.popup.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/untitled&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.app1.Alert.executor": "Debug",
+    "JUnit.app1.HandleNestedFramesinPlaywrightJava.executor": "Debug",
+    "JUnit.app1.autco_complete_test.executor": "Debug",
+    "JUnit.app1.checkbox.executor": "Debug",
+    "JUnit.app1.dynamindropdown.executor": "Debug",
+    "JUnit.app1.getfirstandlastelement.executor": "Debug",
+    "JUnit.app1.getlistelement.executor": "Debug",
+    "JUnit.app1.popup.executor": "Debug",
+    "JUnit.app1.recordvideo.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.popUp.executor": "Debug",
+    "TestNG.popUp.popUp.executor": "Debug",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/USER/Morena",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.app1.popup">
+}]]></component>
+  <component name="RunManager" selected="JUnit.app1.recordvideo">
     <configuration name="app1.Alert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
@@ -74,54 +80,6 @@
       <option name="PACKAGE_NAME" value="id.co.pkp" />
       <option name="MAIN_CLASS_NAME" value="id.co.pkp.app1" />
       <option name="METHOD_NAME" value="Alert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="app1.HandleNestedFramesinPlaywrightJava" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="id.co.pkp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="id.co.pkp" />
-      <option name="MAIN_CLASS_NAME" value="id.co.pkp.app1" />
-      <option name="METHOD_NAME" value="HandleNestedFramesinPlaywrightJava" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="app1.autco_complete_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="id.co.pkp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="id.co.pkp" />
-      <option name="MAIN_CLASS_NAME" value="id.co.pkp.app1" />
-      <option name="METHOD_NAME" value="autco_complete_test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="app1.checkbox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="id.co.pkp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="id.co.pkp" />
-      <option name="MAIN_CLASS_NAME" value="id.co.pkp.app1" />
-      <option name="METHOD_NAME" value="checkbox" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,13 +101,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="app1.recordvideo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="id.co.pkp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="id.co.pkp" />
+      <option name="MAIN_CLASS_NAME" value="id.co.pkp.app1" />
+      <option name="METHOD_NAME" value="recordvideo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="popUp" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="id.co.pkp.Retry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="id.co.pkp.Retry" />
+      <option name="MAIN_CLASS_NAME" value="id.co.pkp.Retry.popUp" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="popUp.popUp" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="id.co.pkp.Retry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="id.co.pkp.Retry" />
+      <option name="MAIN_CLASS_NAME" value="id.co.pkp.Retry.popUp" />
+      <option name="METHOD_NAME" value="popUp" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.app1.recordvideo" />
+        <item itemvalue="TestNG.popUp.popUp" />
+        <item itemvalue="TestNG.popUp" />
         <item itemvalue="JUnit.app1.popup" />
         <item itemvalue="JUnit.app1.Alert" />
-        <item itemvalue="JUnit.app1.HandleNestedFramesinPlaywrightJava" />
-        <item itemvalue="JUnit.app1.checkbox" />
-        <item itemvalue="JUnit.app1.autco_complete_test" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +173,7 @@
       <workItem from="1701399951928" duration="1863000" />
       <workItem from="1701658862835" duration="20000" />
       <workItem from="1701658940491" duration="8008000" />
-      <workItem from="1701744388773" duration="1078000" />
+      <workItem from="1701744388773" duration="6452000" />
     </task>
     <task id="LOCAL-00001" summary="soft assert">
       <option name="closed" value="true" />
@@ -278,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701745122772</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="retry skenario">
+      <option name="closed" value="true" />
+      <created>1701745472571</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701745472571</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
