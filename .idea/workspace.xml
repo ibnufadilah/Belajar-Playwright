@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a4084b9-0b93-42b9-a148-a088f35057c8" name="Changes" comment="pop up jeung modal">
+      <change afterPath="$PROJECT_DIR$/src/test/java/id/co/pkp/Retry/dicoba.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,30 +36,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.app1.Alert.executor": "Debug",
-    "JUnit.app1.HandleNestedFramesinPlaywrightJava.executor": "Debug",
-    "JUnit.app1.autco_complete_test.executor": "Debug",
-    "JUnit.app1.checkbox.executor": "Debug",
-    "JUnit.app1.dynamindropdown.executor": "Debug",
-    "JUnit.app1.getfirstandlastelement.executor": "Debug",
-    "JUnit.app1.getlistelement.executor": "Debug",
-    "JUnit.app1.popup.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/USER/untitled",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.app1.Alert.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.app1.HandleNestedFramesinPlaywrightJava.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.app1.autco_complete_test.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.app1.checkbox.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.app1.dynamindropdown.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.app1.getfirstandlastelement.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.app1.getlistelement.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.app1.popup.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/untitled&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.app1.popup">
     <configuration name="app1.Alert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
@@ -160,7 +161,8 @@
       <updated>1701399950935</updated>
       <workItem from="1701399951928" duration="1863000" />
       <workItem from="1701658862835" duration="20000" />
-      <workItem from="1701658940491" duration="7257000" />
+      <workItem from="1701658940491" duration="8008000" />
+      <workItem from="1701744388773" duration="588000" />
     </task>
     <task id="LOCAL-00001" summary="soft assert">
       <option name="closed" value="true" />
