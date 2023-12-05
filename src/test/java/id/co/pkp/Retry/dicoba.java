@@ -11,7 +11,7 @@ public class dicoba implements IRetryAnalyzer {
         if (!result.isSuccess()){
             if (retryCount < maxRetrycount){
                 System.out.println(
-                        "Retrying Test : Re-running "+ result.getName() + "for " + (retryCount + 1) " time(s)."
+                        "Retrying Test : Re-running "+ result.getName() + "for " + (retryCount + 1) " time(s).";
                 );
                 retryCount++; //increase the maxRetryCount +1
                 result.setStatus(ITestResult.FAILURE);
