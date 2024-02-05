@@ -339,5 +339,25 @@ public class app1 {
             newContext.close();
             playwright.close();
         }
+        @Test
+    @DisplayName("Download file")
+    public void download_file(){
+            Playwright playwright = Playwright.create();
+            Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+            Page page = browser.newPage();
+            page.navigate("http://demo.automationtesting.in/FileDownload.html");
+            Download waitForDownload = page.waitForDownload(page.locator("a.btn-primary")::click);
+            waitForDownload.saveAs(Paths.get("Downloads/", waitForDownload.suggestedFilename()));
+
+
+            System.out.println(waitForDownload.url());
+            System.out.println(waitForDownload.page().title());
+            System.out.println(waitForDownload.path().toString());
+
+            page.close();
+            browser.close();
+            playwright.close();
+
+        }
 
 }

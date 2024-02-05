@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a4084b9-0b93-42b9-a148-a088f35057c8" name="Changes" comment="retry skenario">
-      <change afterPath="$PROJECT_DIR$/src/test/java/id/co/pkp/Retry/popUp.java" afterDir="false" />
+    <list default="true" id="1a4084b9-0b93-42b9-a148-a088f35057c8" name="Changes" comment="record video">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/id/co/pkp/Retry/dicoba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/id/co/pkp/Retry/dicoba.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/id/co/pkp/app1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/id/co/pkp/app1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +24,9 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/testng/testng/7.8.0/testng-7.8.0.jar!/org/testng/IRetryAnalyzer.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -47,6 +49,7 @@
     "JUnit.app1.HandleNestedFramesinPlaywrightJava.executor": "Debug",
     "JUnit.app1.autco_complete_test.executor": "Debug",
     "JUnit.app1.checkbox.executor": "Debug",
+    "JUnit.app1.download_file.executor": "Debug",
     "JUnit.app1.dynamindropdown.executor": "Debug",
     "JUnit.app1.getfirstandlastelement.executor": "Debug",
     "JUnit.app1.getlistelement.executor": "Debug",
@@ -68,8 +71,8 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.app1.recordvideo">
-    <configuration name="app1.Alert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.app1.download_file">
+    <configuration name="app1.download_file" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
@@ -79,13 +82,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="id.co.pkp" />
       <option name="MAIN_CLASS_NAME" value="id.co.pkp.app1" />
-      <option name="METHOD_NAME" value="Alert" />
+      <option name="METHOD_NAME" value="download_file" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app1.popup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="app1.dynamindropdown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
@@ -95,7 +98,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="id.co.pkp" />
       <option name="MAIN_CLASS_NAME" value="id.co.pkp.app1" />
-      <option name="METHOD_NAME" value="popup" />
+      <option name="METHOD_NAME" value="dynamindropdown" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.app1.download_file" />
+        <item itemvalue="JUnit.app1.dynamindropdown" />
         <item itemvalue="JUnit.app1.recordvideo" />
         <item itemvalue="TestNG.popUp.popUp" />
         <item itemvalue="TestNG.popUp" />
-        <item itemvalue="JUnit.app1.popup" />
-        <item itemvalue="JUnit.app1.Alert" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +176,16 @@
       <workItem from="1701399951928" duration="1863000" />
       <workItem from="1701658862835" duration="20000" />
       <workItem from="1701658940491" duration="8008000" />
-      <workItem from="1701744388773" duration="6452000" />
+      <workItem from="1701744388773" duration="8555000" />
+      <workItem from="1701835819707" duration="108000" />
+      <workItem from="1701836189476" duration="1222000" />
+      <workItem from="1701915884140" duration="638000" />
+      <workItem from="1701916680219" duration="159000" />
+      <workItem from="1703057632299" duration="743000" />
+      <workItem from="1705460266827" duration="3733000" />
+      <workItem from="1705551123490" duration="748000" />
+      <workItem from="1706061999499" duration="240000" />
+      <workItem from="1707103160838" duration="918000" />
     </task>
     <task id="LOCAL-00001" summary="soft assert">
       <option name="closed" value="true" />
@@ -295,7 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701745472571</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="record video">
+      <option name="closed" value="true" />
+      <created>1701756921719</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701756921719</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +344,7 @@
     <MESSAGE value="pop up" />
     <MESSAGE value="pop up jeung modal" />
     <MESSAGE value="retry skenario" />
-    <option name="LAST_COMMIT_MESSAGE" value="retry skenario" />
+    <MESSAGE value="record video" />
+    <option name="LAST_COMMIT_MESSAGE" value="record video" />
   </component>
 </project>
