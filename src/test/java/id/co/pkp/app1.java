@@ -359,5 +359,18 @@ public class app1 {
             playwright.close();
 
         }
+    @Test
+    @DisplayName("Upload")
+    public void uploadfile(){
+        Playwright playwright = Playwright.create();
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Page page = browser.newPage();
+        page.navigate("http://autopract.com/selenium/upload1/");
+        page.setInputFiles("//input[@type='file']",
+                Paths.get("C:\\Users\\USER\\Pictures\\dede-inoen-raja-jin.png"));
+        page.close();
+        browser.close();
+        playwright.close();
+    }
 
 }

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a4084b9-0b93-42b9-a148-a088f35057c8" name="Changes" comment="record video">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="1a4084b9-0b93-42b9-a148-a088f35057c8" name="Changes" comment="download video">
       <change beforePath="$PROJECT_DIR$/src/test/java/id/co/pkp/app1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/id/co/pkp/app1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +53,7 @@
     "JUnit.app1.getlistelement.executor": "Debug",
     "JUnit.app1.popup.executor": "Debug",
     "JUnit.app1.recordvideo.executor": "Debug",
+    "JUnit.app1.uploadfile.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.popUp.executor": "Debug",
@@ -71,7 +70,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.app1.download_file">
+  <component name="RunManager" selected="JUnit.app1.uploadfile">
     <configuration name="app1.download_file" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
@@ -120,19 +119,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="popUp" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="app1.uploadfile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="id.co.pkp.Retry.*" />
+          <option name="PATTERN" value="id.co.pkp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="id.co.pkp.Retry" />
-      <option name="MAIN_CLASS_NAME" value="id.co.pkp.Retry.popUp" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="PACKAGE_NAME" value="id.co.pkp" />
+      <option name="MAIN_CLASS_NAME" value="id.co.pkp.app1" />
+      <option name="METHOD_NAME" value="uploadfile" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.app1.uploadfile" />
         <item itemvalue="JUnit.app1.download_file" />
         <item itemvalue="JUnit.app1.dynamindropdown" />
         <item itemvalue="JUnit.app1.recordvideo" />
         <item itemvalue="TestNG.popUp.popUp" />
-        <item itemvalue="TestNG.popUp" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +183,7 @@
       <workItem from="1705460266827" duration="3733000" />
       <workItem from="1705551123490" duration="748000" />
       <workItem from="1706061999499" duration="240000" />
-      <workItem from="1707103160838" duration="918000" />
+      <workItem from="1707103160838" duration="3684000" />
     </task>
     <task id="LOCAL-00001" summary="soft assert">
       <option name="closed" value="true" />
@@ -315,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701756921719</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="download video">
+      <option name="closed" value="true" />
+      <created>1707104122994</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1707104122994</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,6 +351,7 @@
     <MESSAGE value="pop up jeung modal" />
     <MESSAGE value="retry skenario" />
     <MESSAGE value="record video" />
-    <option name="LAST_COMMIT_MESSAGE" value="record video" />
+    <MESSAGE value="download video" />
+    <option name="LAST_COMMIT_MESSAGE" value="download video" />
   </component>
 </project>
