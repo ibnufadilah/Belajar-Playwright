@@ -363,7 +363,7 @@ public class app1 {
     @DisplayName("Upload")
     public void uploadfile(){
         Playwright playwright = Playwright.create();
-        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(700));
         Page page = browser.newPage();
         page.navigate("http://autopract.com/selenium/upload1/");
         page.setInputFiles("//input[@type='file']",
@@ -371,6 +371,38 @@ public class app1 {
         page.close();
         browser.close();
         playwright.close();
+    }
+    @Test
+    @DisplayName("Upload2")
+    public void uploadfile2(){
+        Playwright playwright = Playwright.create();
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(700));
+        Page page = browser.newPage();
+        page.navigate("https://the-internet.herokuapp.com/upload");
+        FileChooser fileChooser = page.waitForFileChooser(() -> page.click("#file-upload"));
+        fileChooser.setFiles((Paths.get("C:\\Users\\USER\\Pictures\\dede-inoen-raja-jin.png")));
+        page.click("input:has-text(\"Upload\")");
+        page.waitForLoadState();
+        page.pause();
+        page.close();
+        browser.close();
+        playwright.close();
+    }
+
+    @Test
+    @DisplayName("Mouse hover element")
+    public void mousehoverelemetn(){
+        Playwright playwright = Playwright.create();
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(700));
+        Page page = browser.newPage();
+        page.navigate("http://www.programsbuzz.com/");
+        Locator tutorial = page.locator("//a[@class='we-mega-menu-li'][normalize-space()='Tutorials']");
+        tutorial.hover();
+        page.locator("//a[@class='we-mega-menu-li'][normalize-space()='Quality Assurance']").click();
+        System.out.println(page.title());
+        browser.close();
+        playwright.close();
+
     }
 
 }
