@@ -1,12 +1,18 @@
 package id.co.pkp;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import com.microsoft.playwright.*;
+import com.microsoft.playwright.options.RequestOptions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.nio.file.Paths;
+import java.util.HashMap;
 import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class app1 {
         @Test
@@ -383,6 +389,7 @@ public class app1 {
         fileChooser.setFiles((Paths.get("C:\\Users\\USER\\Pictures\\dede-inoen-raja-jin.png")));
         page.click("input:has-text(\"Upload\")");
         page.waitForLoadState();
+        System.out.println(page.locator("#upload-files").textContent());
         page.pause();
         page.close();
         browser.close();
@@ -403,6 +410,64 @@ public class app1 {
         browser.close();
         playwright.close();
 
+    }
+
+    @Test
+    @DisplayName("GET API")
+    public void get_api (){
+        int numberOfUsers = 10;
+        Thread[] threads = new Thread[numberOfUsers];
+
+        for (int i = 0; i < numberOfUsers; i++) {
+            threads[i] = new Thread(() -> {
+                Playwright playwright = Playwright.create();
+                Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+                Page page = browser.newPage();
+                Response response = page.navigate("https://devklinik.pkp.my.id/login");
+                int status = response.status();
+                System.out.println("Status code for user " + Thread.currentThread().getId() + ": " + status);
+                page.close();
+                browser.close();
+                playwright.close();
+            });
+            threads[i].start();
+        }
+
+        // Wait for all threads to complete
+        for (int i = 0; i < numberOfUsers; i++) {
+            try {
+                threads[i].join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
+    @Test
+    @DisplayName("POST API")
+    public void post_api (){
+        Playwright playwright = Playwright.create();
+        APIRequestContext request = playwright.request().newContext();
+
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Page page = browser.newPage();
+
+        HashMap<String, String> data = new HashMap<String, String>();
+
+        data.put("name", "Naruto");
+        data.put("job", "Ninja");
+
+        String response = request.post("https://reqres.in/api/users", RequestOptions.create().setData(data)).text();
+
+        System.out.println(response);
+
+        JsonObject j = new Gson().fromJson(response, JsonObject.class);
+        System.out.println(j.get("name"));
+
+        page.close();
+        browser.close();
+        playwright.close();
     }
 
 }
