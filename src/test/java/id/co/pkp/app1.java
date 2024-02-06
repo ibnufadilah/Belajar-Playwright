@@ -470,4 +470,63 @@ public class app1 {
         playwright.close();
     }
 
+    @Test
+    @DisplayName("POST Multiple Data API")
+    public void post_multiple_data_api (){
+        Playwright playwright = Playwright.create();
+        APIRequestContext request = playwright.request().newContext();
+
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Page page = browser.newPage();
+
+        // Membuat data pertama
+        HashMap<String, String> data1 = new HashMap<String, String>();
+        data1.put("name", "Naruto");
+        data1.put("job", "Ninja");
+
+        // Membuat data kedua
+        HashMap<String, String> data2 = new HashMap<String, String>();
+        data2.put("name", "Sasuke");
+        data2.put("job", "Rogue Ninja");
+
+        // Mengirimkan permintaan POST untuk data pertama
+        String response1 = request.post("https://reqres.in/api/users", RequestOptions.create().setData(data1)).text();
+        System.out.println("Response 1: " + response1);
+
+        // Mengirimkan permintaan POST untuk data kedua
+        String response2 = request.post("https://reqres.in/api/users", RequestOptions.create().setData(data2)).text();
+        System.out.println("Response 2: " + response2);
+
+        page.close();
+        browser.close();
+        playwright.close();
+    }
+
+
+    @Test
+    @DisplayName("PUT API")
+    public void put_api (){
+        Playwright playwright = Playwright.create();
+        APIRequestContext request = playwright.request().newContext();
+
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Page page = browser.newPage();
+
+        HashMap<String, String> data = new HashMap<String, String>();
+
+        data.put("name", "Naruto");
+        data.put("job", "Ninja");
+
+        String response = request.put("https://reqres.in/api/users/2", RequestOptions.create().setData(data)).text();
+
+        System.out.println(response);
+
+        JsonObject j = new Gson().fromJson(response, JsonObject.class);
+        System.out.println(j.get("name"));
+        System.out.println(j.get("job"));
+        page.close();
+        browser.close();
+        playwright.close();
+    }
+
 }
