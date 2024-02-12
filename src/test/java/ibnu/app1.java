@@ -1,4 +1,4 @@
-package id.co.pkp;
+package ibnu;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
@@ -524,6 +524,55 @@ public class app1 {
         JsonObject j = new Gson().fromJson(response, JsonObject.class);
         System.out.println(j.get("name"));
         System.out.println(j.get("job"));
+        page.close();
+        browser.close();
+        playwright.close();
+    }
+
+    @Test
+    @DisplayName("Patch API")
+    public void patch_api (){
+        Playwright playwright = Playwright.create();
+        APIRequestContext request = playwright.request().newContext();
+
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Page page = browser.newPage();
+
+        HashMap<String, String> data = new HashMap<String, String>();
+
+        data.put("name", "Sasuke");
+        data.put("job", "Uchiha");
+
+        String response = request.patch("https://reqres.in/api/users/2", RequestOptions.create().setData(data)).text();
+
+        System.out.println(response);
+
+        JsonObject j = new Gson().fromJson(response, JsonObject.class);
+        System.out.println(j.get("name"));
+        System.out.println(j.get("job"));
+        page.close();
+        browser.close();
+        playwright.close();
+    }
+    @Test
+    @DisplayName("Delete API")
+    public void delete_api (){
+        Playwright playwright = Playwright.create();
+        APIRequestContext request = playwright.request().newContext();
+
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Page page = browser.newPage();
+
+        HashMap<String, String> data = new HashMap<String, String>();
+
+        data.put("name", "Sasuke");
+        data.put("job", "Uchiha");
+
+        String response = request.delete("https://reqres.in/api/users/2", RequestOptions.create().setData(data)).text();
+
+        System.out.println(response);
+
+
         page.close();
         browser.close();
         playwright.close();

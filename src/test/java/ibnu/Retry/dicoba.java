@@ -1,4 +1,4 @@
-package id.co.pkp.Retry;
+package ibnu.Retry;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;

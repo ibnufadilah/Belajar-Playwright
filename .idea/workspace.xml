@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a4084b9-0b93-42b9-a148-a088f35057c8" name="Changes" comment="download video">
-      <change beforePath="$PROJECT_DIR$/src/test/java/id/co/pkp/app1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/id/co/pkp/app1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ibnu/cucumber/QuickLookupRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ibnu/cucumber/QuickSearchRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ibnu/stepdefinition/BookCartStepDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/QuickLoockUp.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ibnu/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/id/co/pkp/Retry/dicoba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ibnu/Retry/dicoba.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/id/co/pkp/Retry/popUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ibnu/Retry/popUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/id/co/pkp/app1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ibnu/app1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +39,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -43,22 +52,31 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cucumber Java.Scenario: Lookup a specific book - Positive.executor": "Debug",
+    "Cucumber.js.QuickLoockUp.feature.executor": "Run",
+    "JUnit.QuickLookupRunner (1).executor": "Debug",
+    "JUnit.QuickLookupRunner.executor": "Run",
+    "JUnit.QuickSearchRunner.executor": "Debug",
     "JUnit.app1.Alert.executor": "Debug",
     "JUnit.app1.HandleNestedFramesinPlaywrightJava.executor": "Debug",
     "JUnit.app1.autco_complete_test.executor": "Debug",
     "JUnit.app1.checkbox.executor": "Debug",
+    "JUnit.app1.delete_api.executor": "Debug",
     "JUnit.app1.download_file.executor": "Debug",
     "JUnit.app1.dynamindropdown.executor": "Debug",
     "JUnit.app1.get_api.executor": "Debug",
     "JUnit.app1.getfirstandlastelement.executor": "Debug",
     "JUnit.app1.getlistelement.executor": "Debug",
     "JUnit.app1.mousehoverelemetn.executor": "Debug",
+    "JUnit.app1.patch_api.executor": "Debug",
     "JUnit.app1.popup.executor": "Debug",
     "JUnit.app1.post_api.executor": "Debug",
+    "JUnit.app1.post_multiple_data_api.executor": "Debug",
     "JUnit.app1.put_api.executor": "Debug",
     "JUnit.app1.recordvideo.executor": "Debug",
     "JUnit.app1.uploadfile.executor": "Debug",
     "JUnit.app1.uploadfile2.executor": "Debug",
+    "Maven.untitled [clean,verify].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.popUp.executor": "Debug",
@@ -72,97 +90,97 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.app1.post_multiple_data_api">
-    <configuration name="app1.get_api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean verify" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.QuickLookupRunner (1)">
+    <configuration name="Scenario: Lookup a specific book - Positive" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/feature/QuickLoockUp.feature" />
+      <option name="GLUE" value="id.co.pkp.stepdefinition" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="untitled" />
+      <option name="NAME_FILTER" value="^Lookup a specific book \- Positive$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Lookup a specific book \- Positive$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Lookup a specific book - Positive" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="id.co.pkp.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="id.co.pkp" />
-      <option name="MAIN_CLASS_NAME" value="id.co.pkp.app1" />
-      <option name="METHOD_NAME" value="get_api" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app1.post_api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuickLookupRunner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="id.co.pkp.*" />
+          <option name="PATTERN" value="ibnu.cucumber.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="id.co.pkp" />
-      <option name="MAIN_CLASS_NAME" value="id.co.pkp.app1" />
-      <option name="METHOD_NAME" value="post_api" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="ibnu.cucumber" />
+      <option name="MAIN_CLASS_NAME" value="ibnu.cucumber.QuickLookupRunner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app1.post_multiple_data_api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuickLookupRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="id.co.pkp.*" />
+          <option name="PATTERN" value="id.co.pkp.cucumber.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="id.co.pkp" />
-      <option name="MAIN_CLASS_NAME" value="id.co.pkp.app1" />
-      <option name="METHOD_NAME" value="post_multiple_data_api" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="id.co.pkp.cucumber" />
+      <option name="MAIN_CLASS_NAME" value="id.co.pkp.cucumber.QuickLookupRunner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app1.put_api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuickSearchRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="id.co.pkp.*" />
+          <option name="PATTERN" value="org.example.cucumber.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="id.co.pkp" />
-      <option name="MAIN_CLASS_NAME" value="id.co.pkp.app1" />
-      <option name="METHOD_NAME" value="put_api" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="org.example.cucumber" />
+      <option name="MAIN_CLASS_NAME" value="org.example.cucumber.QuickSearchRunner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app1.uploadfile2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="id.co.pkp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="id.co.pkp" />
-      <option name="MAIN_CLASS_NAME" value="id.co.pkp.app1" />
-      <option name="METHOD_NAME" value="uploadfile2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="QuickLoockUp.feature" type="cucumber.js" factoryName="Cucumber.js" temporary="true">
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/feature/QuickLoockUp.feature" />
+      <option name="myNameFilter" />
+      <option name="cucumberJsArguments" value="" />
+      <option name="workingDirectory" />
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.app1.post_multiple_data_api" />
-        <item itemvalue="JUnit.app1.put_api" />
-        <item itemvalue="JUnit.app1.get_api" />
-        <item itemvalue="JUnit.app1.post_api" />
-        <item itemvalue="JUnit.app1.uploadfile2" />
+        <item itemvalue="JUnit.QuickLookupRunner (1)" />
+        <item itemvalue="Cucumber Java.Scenario: Lookup a specific book - Positive" />
+        <item itemvalue="Cucumber.js.QuickLoockUp.feature" />
+        <item itemvalue="JUnit.QuickSearchRunner" />
+        <item itemvalue="JUnit.QuickLookupRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +205,9 @@
       <workItem from="1705551123490" duration="748000" />
       <workItem from="1706061999499" duration="240000" />
       <workItem from="1707103160838" duration="5279000" />
-      <workItem from="1707189281551" duration="1930000" />
+      <workItem from="1707189281551" duration="4643000" />
+      <workItem from="1707278005701" duration="5665000" />
+      <workItem from="1707708611542" duration="2249000" />
     </task>
     <task id="LOCAL-00001" summary="soft assert">
       <option name="closed" value="true" />
@@ -357,5 +377,10 @@
     <MESSAGE value="record video" />
     <MESSAGE value="download video" />
     <option name="LAST_COMMIT_MESSAGE" value="download video" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/untitled$Scenario__Lookup_a_specific_book___Positive.ic" NAME="Scenario: Lookup a specific book - Positive Coverage Results" MODIFIED="1707283135032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
   </component>
 </project>
